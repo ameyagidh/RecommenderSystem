@@ -6,6 +6,8 @@ The Course Recommender System is a project aimed at providing personalized cours
 
 <img width="1496" alt="Screenshot 2024-03-20 at 1 27 31 AM" src="https://github.com/ameyagidh/RecommenderSystem/assets/65457905/f381cb9e-c94f-4be5-9352-f2e51e6eb65a">
 
+![ezgif com-animated-gif-maker](https://github.com/ameyagidh/RecommenderSystem/assets/65457905/ff7bb875-1837-44a7-82d5-8237b22dcede)
+
 
 ## Features
 
