@@ -1,0 +1,85 @@
+<!-- views/history.ejs -->
+
+<% if (typeof takenCourses != "undefined") { %>
+    <% for (idx=0; idx < takenCourses.length; idx++) { %>
+        <div class="card mx-auto bg-light" style="width: 80%;">
+            <div class="card-body">
+                <p id="takenCourseId" hidden><%= takenCourses[idx].course_id %></p>
+                <h5 class="card-title" style="display: inline;"><%= takenCourses[idx].name %></h5>
+                <% for (innerIdx=0; innerIdx < takenCoursesWithGrade.length; innerIdx++) { %>
+                    <% if (takenCourses[idx].course_id == takenCoursesWithGrade[innerIdx].course_id) { %>
+                        <h4 class="float-right" style="display: inline;"><%= takenCoursesWithGrade[innerIdx].grade_code %></h4>
+                    <% } %>
+                <% } %>
+                <p class="card-text"><%= takenCourses[idx].description %></p>
+            </div>
+        </div>
+    <% } %>
+    <button type="button" class="btn btn-primary mr-2 float-right" data-toggle="modal" data-target="#newCourse" data-whatever="">Add New</button>
+<% } else { %>
+    <div class="text-center">
+        <button type="button" class="btn btn-primary btn-lg mb-4" data-toggle="modal" data-target="#newCourse" data-whatever="">Add New</button>
+    </div>
+<% } %>
+<div class="modal fade" id="newCourse" tabindex="-1" role="dialog" aria-labelledby="newCourseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <form action="home/addCourse" method="POST">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newCourseModalLabel">New Course</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="levelSelection" class="col-form-label">Level:</label>
+                        <select class="form-control" id="levelSelection" name="levelId">
+                            <option disabled selected value> -- select an option -- </option>
+                            <% for (idx=0; idx < allLevels.length; idx++) { %>
+                                <option value="<%= allLevels[idx].level_id %>"><%= allLevels[idx].level_name %></option>
+                            <% } %>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="termSelection" class="col-form-label">Term:</label>
+                        <select class="form-control" id="termSelection" name="termId">
+                            <option disabled selected value> -- select an option -- </option>
+                            <% for (idx=0; idx < allTerms.length; idx++) { %>
+                                <option value="<%= allTerms[idx].term_id %>"><%= allTerms[idx].semester + " " + allTerms[idx].year %></option>
+                            <% } %>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="courseSelection" class="col-form-label">Course Name:</label>
+                        <select class="form-control" id="courseSelection" name="courseId" onchange="showDescription(this);">
+                            <option disabled selected value> -- select an option -- </option>
+                            <% for (idx=0; idx < allCourses.length; idx++) { %>
+                                <option value="<%= allCourses[idx].course_id %>"><%= allCourses[idx].name %></option>
+                            <% } %>
+                        </select>
+                    </div>
+                    <p class="col-form-label">Description:</p>
+                    <div id="courseDescriptions">
+                        <% for (idx=0; idx < allCourses.length; idx++) { %>
+                            <p id="courseId<%= allCourses[idx].course_id %>" hidden><small><%= allCourses[idx].description %></small></p>
+                        <% } %>
+                    </div>
+                    <div class="form-group">
+                        <label for="gradeSelection" class="col-form-label">Grade:</label>
+                        <select class="form-control" id="gradeSelection" name="gradeId">
+                            <option disabled selected value> -- select an option -- </option>
+                            <% for (idx=0; idx < allGrades.length; idx++) { %>
+                                <option value="<%= allGrades[idx].grade_code %>"><%= allGrades[idx].grade_code %></option>
+                            <% } %>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

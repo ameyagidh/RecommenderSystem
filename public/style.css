@@ -1,0 +1,25 @@
+/* Default Settings */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+}
+/* Bootstrap Customization */
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-color: rgba(0, 123, 255, .15);
+    border: 1px solid rgba(0, 123, 255, .2);
+}
+.card:first-of-type {
+    margin-top: 0;
+}
+.card {
+    margin: 1rem;
+}

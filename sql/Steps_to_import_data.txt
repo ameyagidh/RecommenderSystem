@@ -1,0 +1,6 @@
+Steps to install the Database :
+1. Have a version of MAMP or XAMPP or MAMP installed. 
+2. Open PHP myAdmin and click on SQL Tab.
+3. First, Execute the file "create_tables.sql"
+4. Execute the file "insert_tables.sql
+4. Execute file "alter_table.sql"

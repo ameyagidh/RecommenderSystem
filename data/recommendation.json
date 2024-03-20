@@ -1,0 +1,202 @@
+{
+    "105609": {
+        "name": "INTRODUCTION TO COMPUTER PROGRAMMING-BASIC",
+        "description": "This is a first course in computer science.  It is designed to be of special interest to students majoring in one of the social sciences or humanities.  Objectives of this course include use of the computer in an interactive environment; problem analysis and the development of algorithms; learning the basic language; designing; coding; and documenting programs using techniques of good programming style.",
+        "level_id": "UG",
+        "plan_id": 4,
+        "course_index": 2,
+        "score": 1.0,
+        "average_grade": 3.6057692308,
+        "num_students": 52.0
+    },
+    "113080": {
+        "name": "SPECIAL TOPICS: SYSTEMS",
+        "description": "Advanced class focusing on current or specialized topic in systems area.",
+        "level_id": "UG",
+        "plan_id": 1,
+        "course_index": 176,
+        "score": 1.0,
+        "average_grade": 3.6225490196,
+        "num_students": 51.0
+    },
+    "113068": {
+        "name": "ARTIFICIAL INTELLIGENCE",
+        "description": "An overview of the basic concepts of AI including:  search and problem solving, knowledge representation techniques, system architectures, natural language processing and machine learning.",
+        "level_id": "UG",
+        "plan_id": 1,
+        "course_index": 166,
+        "score": 1.0,
+        "average_grade": 4.0,
+        "num_students": 1.0
+    },
+    "113074": {
+        "name": "INTERNET CONSTRUCTION",
+        "description": "Telecommunications technologies of the internet, including routers and routing, performance analysis, management and security, and wireless LANS.  Special topics in current internet issues.  Lab component.",
+        "level_id": "UG",
+        "plan_id": 1,
+        "course_index": 172,
+        "score": 1.0,
+        "average_grade": 3.0227272727,
+        "num_students": 11.0
+    },
+    "113079": {
+        "name": "SPECIAL TOPICS: BEHAVIORAL",
+        "description": "Advanced class focusing on current or specialized topic in behavioral area.",
+        "level_id": "UG",
+        "plan_id": 1,
+        "course_index": 175,
+        "score": 1.0,
+        "average_grade": 3.3823529412,
+        "num_students": 17.0
+    },
+    "113063": {
+        "name": "MANAGEMENT INFORMATION SYSTEMS",
+        "description": "To provide students with an appreciation of the actual working environment of the typical misdepartment within the business community, including organizational structure and communication, budgeting issues, personnel issues, equipment acquisition and installation, planning for daily operations, and system evaluation.",
+        "level_id": "UG",
+        "plan_id": 1,
+        "course_index": 161,
+        "score": 1.0,
+        "average_grade": 1.8125,
+        "num_students": 4.0
+    },
+    "113060": {
+        "name": "INFORMATION STORAGE AND RETRIEVAL",
+        "description": "Basic principles and tools for analysis and retrieval of documents in bibliographic information systems; acquisition of information, subject analysis, terminology control, coding and recording of results of analysis on a searchable medium, and question analysis and search strategy development.",
+        "level_id": "UG",
+        "plan_id": 1,
+        "course_index": 158,
+        "score": 1.0,
+        "average_grade": 3.6176470588,
+        "num_students": 34.0
+    },
+    "113059": {
+        "name": "ANALYSIS OF INFORMATION SYSTEMS",
+        "description": "This course provides state-of-the-art skills in requirements management and scope management, which is critical for successful IT projects. Topics include best practices in eliciting, documenting, verifying and modeling requirements. This is an active learning course where students develop an analysis model for a realistic IT project which can serve as a foundation for INFSCI 1017 and INFSCI 1025. The analysis model is suitable for inclusion in the student's IT portfolio.",
+        "level_id": "UG",
+        "plan_id": 1,
+        "course_index": 157,
+        "score": 1.0,
+        "average_grade": 3.2861111111,
+        "num_students": 270.0
+    },
+    "105611": {
+        "name": "INTRODUCTION TO COMPUTER PROGRAMMING",
+        "description": "This is a first course in computer science programming.  It is recommended for those students intending to major in computer science who do not have the required background for cs 0401.  It may also be of interest to students majoring in one of the social sciences or humanities.  The focus of the course is on problem analysis and the development of algorithms and computer programs in a modern high-level language.",
+        "level_id": "UG",
+        "plan_id": 4,
+        "course_index": 4,
+        "score": 1.0,
+        "average_grade": 3.362244898,
+        "num_students": 49.0
+    },
+    "113049": {
+        "name": "PROGRAM DESIGN AND SOFTWARE TOOLS",
+        "description": "Introduction to developing programs using c++.  Emphasis on development of program modules that can function independently.  Further theory of data structures and programming language design.",
+        "level_id": "UG",
+        "plan_id": 1,
+        "course_index": 149,
+        "score": 1.0,
+        "average_grade": 3.0368852459,
+        "num_students": 61.0
+    },
+    "113045": {
+        "name": "INTRODUCTION TO PROGRAMMING",
+        "description": "Introduction to concepts, principles, and skills of programming, including compilers, algorithms, and problem solving using a high level programming language such as c.  Intended for students with little or no programming experience who seek an information science major.",
+        "level_id": "UG",
+        "plan_id": 1,
+        "course_index": 146,
+        "score": 1.0,
+        "average_grade": 2.9868421053,
+        "num_students": 19.0
+    },
+    "113043": {
+        "name": "INTRODUCTION TO INFORMATION, SYSTEMS AND SOCIETY",
+        "description": "Introduction to the concepts, principles, and skills of information science for students with no programming experience.  Topics include:  the need for information and the use of information, data collection, coding, storage and retrieval, information processing, information display, and the evaluation of information.",
+        "level_id": "UG",
+        "plan_id": 1,
+        "course_index": 144,
+        "score": 1.0,
+        "average_grade": 3.5247252747,
+        "num_students": 273.0
+    },
+    "113052": {
+        "name": "TELECOMMUNICATIONS",
+        "description": "Concepts of telecommunications systems used in information networks; equipment utilization in information networks, techniques utilized to transmit signals (e.g., Modulation, multiplexing, error detection and correction), methods of message handling, network configuration, and software (computer programs) utilized in implementing networks.",
+        "level_id": "UG",
+        "plan_id": 1,
+        "course_index": 152,
+        "score": 1.0,
+        "average_grade": 3.0681818182,
+        "num_students": 44.0
+    },
+    "105786": {
+        "name": "INTRODUCTION TO COMPILER DESIGN",
+        "description": "This course will introduce the basic concepts of compiler design and implementation.  Topics include lexical analysis, various types of parsers, intermediate and object code generation and code optimization.  The material will be presented from an implementation point of view rather than a formal approach.  The impact of language design on compilers will also be examined.",
+        "level_id": "UG",
+        "plan_id": 4,
+        "course_index": 39,
+        "score": 1.0,
+        "average_grade": 3.25,
+        "num_students": 4.0
+    },
+    "105795": {
+        "name": "SPECIAL TOPICS IN COMPUTER SCIENCE",
+        "description": "This is a special topics course that allows the computer science department to test run a course before deciding whether to permanently add it to our curriculum.",
+        "level_id": "UG",
+        "plan_id": 4,
+        "course_index": 47,
+        "score": 1.0,
+        "average_grade": 3.4821428571,
+        "num_students": 14.0
+    },
+    "105658": {
+        "name": "PROGRAM IN C AND GUIDE TO UNIX SYSTEM",
+        "description": "This intermediate level course is intended for students who wish to learn the c language and also to learn the use of the Unix operating system.  Course objectives include:  a) the study of the c language using IMB compatible pcs and\/or Unix b) an introduction to data structures using c structures and pointers c) the use of library routines and file operations using the c language d) a user-oriented study of the Unix operating system, its file structure, and editors e) an introduction to shell programming and to the use of Unix utilities.",
+        "level_id": "UG",
+        "plan_id": 4,
+        "course_index": 9,
+        "score": 1.0,
+        "average_grade": 3.25,
+        "num_students": 9.0
+    },
+    "105694": {
+        "name": "DISCRETE STRUCTURES FOR CS",
+        "description": "The purpose of this course is to understand and use (abstract) discrete structures that are backbones of computer science.  In particular, this class is meant to introduce logic, proofs, sets, relations, functions, counting, and probability, with an emphasis on applications in computer science.",
+        "level_id": "UG",
+        "plan_id": 4,
+        "course_index": 13,
+        "score": 1.0,
+        "average_grade": 3.2034883721,
+        "num_students": 43.0
+    },
+    "105695": {
+        "name": "DATA STRUCTURES",
+        "description": "This course emphasizes the study of the basic data structures of computer science (stacks, queues, trees, lists) and their implementations using the java language included in this study are programming techniques which use recursion, reference variables, and dynamic memory allocation.  Students in this course are also introduced to various searching and sorting methods and also expected to develop an intuitive understanding of the complexity of these algorithms.",
+        "level_id": "UG",
+        "plan_id": 4,
+        "course_index": 14,
+        "score": 1.0,
+        "average_grade": 3.2857142857,
+        "num_students": 35.0
+    },
+    "105697": {
+        "name": "COMPUTER ORGANIZATION AND ASSEMBLY LANGUAGE",
+        "description": "The purpose of this course is to study the components of computing systems common to most computer architectures.  In particular, this class is meant to introduce data representation, types of processors, memory types and hierarchy, and device drivers.  The students will learn MIPS assembly language, the design of arithmetic and logic units, and basic designs for RISC processors.",
+        "level_id": "UG",
+        "plan_id": 4,
+        "course_index": 15,
+        "score": 1.0,
+        "average_grade": 3.5080645161,
+        "num_students": 31.0
+    },
+    "105699": {
+        "name": "INTRODUCTION TO SYSTEMS SOFTWARE",
+        "description": "This course covers topics related to the interface of hardware and software.  It covers device interfaces and hardware synchronization at the lowest level of the operating system, the linkage of operating system services to application software, and the fundamental mechanisms for computer communications.",
+        "level_id": "UG",
+        "plan_id": 4,
+        "course_index": 17,
+        "score": 1.0,
+        "average_grade": 3.4907407407,
+        "num_students": 27.0
+    }
+}

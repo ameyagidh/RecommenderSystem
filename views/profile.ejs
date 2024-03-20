@@ -1,0 +1,95 @@
+<form class="my-5" action="" method="POST" oninput="passwordConfirm.setCustomValidity(passwordConfirm.value != password.value ? 'Passwords don\'t match.' : '')">
+    <div class="form-group row justify-content-center">
+        <label for="userName" class="col-sm-2 col-form-label">Name: </label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="userName" name="name" placeholder="Enter name" required value="<%= name %>" disabled>
+        </div>
+    </div>
+    <div class="form-group row justify-content-center">
+        <label for="userUserName" class="col-sm-2 col-form-label">Username: </label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="userUserName" name="username" placeholder="Enter username" required value="<%= username %>" disabled>
+        </div>
+    </div>
+    <div class="form-group row justify-content-center">
+        <label for="userAge" class="col-sm-2 col-form-label">Age: </label>
+        <div class="col-sm-6">
+            <input type="number" class="form-control" id="userAge" name="age" placeholder="Enter age" required value="<%= age %>" disabled>
+        </div>
+    </div>
+    <div class="form-group row justify-content-center">
+        <label for="userGender" class="col-sm-2 col-form-label">Gender: </label>
+        <div class="col-sm-6">
+            <select class="form-control" id="userGender" name="gender" disabled>
+                <% if (gender == "F") { %>
+                    <option value="F" selected>Women</option>
+                    <option value="M">Men</option>
+                <% } else if (gender == "M") {%>
+                    <option value="F">Women</option>
+                    <option value="M" selected>Men</option>
+                <% } %>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row justify-content-center">
+        <label for="userLevel" class="col-sm-2 col-form-label">Level: </label>
+        <div class="col-sm-6">
+            <select class="form-control" id="userLevel" name="level" disabled>
+                <% for (idx=0; idx < level.length; idx++){ %>
+                    <option value="<%= level[idx].level_id %>"><%= level[idx].level_name %></option>
+                <% } %>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row justify-content-center">
+        <label for="userStartTerm" class="col-sm-2 col-form-label">Start term: </label>
+        <div class="col-sm-6">
+            <select class="form-control" id="userStartTerm" name="term" disabled>
+                <% for (idx=0; idx < term.length; idx++){ %>
+                    <option value="<%= term[idx].term_id %>"><%= term[idx].semester + " " + term[idx].year %></option>
+                <% } %>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row justify-content-center">
+        <label for="userPlan" class="col-sm-2 col-form-label">Plan of study: </label>
+        <div class="col-sm-6">
+            <select class="form-control" id="userPlan" name="plan" disabled>
+                <% for (idx=0; idx < plan.length; idx++){ %>
+                    <option value="<%= plan[idx].plan_id %>"><%= plan[idx].plan_of_study %></option>
+                <% } %>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row justify-content-center">
+        <label for="userDegree" class="col-sm-2 col-form-label">Degree: </label>
+        <div class="col-sm-6">
+            <select class="form-control" id="userDegree" name="degree" disabled>
+                <% for (idx=0; idx < degree.length; idx++){ %>
+                    <option value="<%= degree[idx].degree_id %>"><%= degree[idx].degree_name %></option>
+                <% } %>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row justify-content-center">
+        <label for="userEmail" class="col-sm-2 col-form-label">Email: </label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="userEmail" name="email" placeholder="Enter email" required  value="<%= email %>" disabled>
+        </div>
+    </div>
+    <div class="form-group row justify-content-center">
+        <label for="userStatus" class="col-sm-2 col-form-label">Status: </label>
+        <div class="col-sm-6">
+            <select class="form-control" id="userStatus" name="status" disabled>
+                <% if (status == "Y") { %>
+                    <option value="1" selected>Current</option>
+                    <option value="0">Past</option>
+                <% } else { %>
+                    <option value="1">Current</option>
+                    <option value="0"selected>Past</option>
+                <% } %>
+            </select>
+        </div>
+    </div>
+    <!-- <button type="submit" class="btn btn-primary float-right">Edit</button> -->
+</form>

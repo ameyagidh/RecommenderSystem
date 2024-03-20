@@ -1,0 +1,16 @@
+<h5 class="pt-3">Top 20 recommendations</h5>
+<% for (idx=0; idx < recommendCoursesOrder.length; idx++) { %>
+    <% for (innerIdx=0; innerIdx < recommendCourses.length; innerIdx++) { %>
+        <% if (recommendCourses[innerIdx].course_id == recommendCoursesOrder[idx]) { %>
+            <div class="card mx-auto bg-light" style="width: 80%;">
+                <div class="card-body">
+                    <p id="recommendCourseId" hidden><%= recommendCourses[innerIdx].course_id %></p>
+                    <p class="float-left"><small>Avg GPA: <%= pythonData[innerIdx].average_grade.toFixed(2) %></small></p>
+                    <p class="float-right"><small>Student Count: <%= pythonData[innerIdx].num_students %></small></p>
+                    <h6 class="card-title"><%= recommendCourses[innerIdx].name %></h6>
+                    <p class="card-text"><%= recommendCourses[innerIdx].description %></p>
+                </div>
+            </div>
+        <% } %>
+    <% } %>
+<% } %>

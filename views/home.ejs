@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Course Recommender">
+        <meta name="author" content="Ameya Santosh Gidh">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Recommender</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload="loadHistoryTab()">
+        <div class="vertical-center">
+            <div class="container h-100 py-3 px-4">
+                <div class="text-center" id="name">
+                    <h4>Course Recommender</h4>
+                </div>
+                <hr/>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="true">Courses Taken</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="recommendation-tab" data-toggle="tab" href="#recommendation" role="tab" aria-controls="recommendation" aria-selected="false">Recommendation</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content bg-white" id="myTabContent">
+                    <div class="tab-pane fade py-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div id="profileResult">
+                            <!-- insert profile info -->
+                        </div>
+                        <input type="button" class="btn btn-primary ml-2 float-left" onclick="window.location.href = 'signout'" value="Sign Out"/>
+                    </div>
+                    <div class="tab-pane fade py-5 show active" id="history" role="tabpanel" aria-labelledby="history-tab">
+                        <div id="historyResult">
+                            <!-- insert history info -->
+                        </div>
+                        <input type="button" class="btn btn-primary ml-2 float-left" onclick="window.location.href = 'signout'" value="Sign Out"/>
+                    </div>
+                    <div class="tab-pane fade py-5 text-center" id="recommendation" role="tabpanel" aria-labelledby="recommendation-tab">
+                        <form class="" id="submitRecommendation" action="home/recommend" method="POST">
+                            <button type="submit" class="btn btn-primary btn-lg mb-4">New Recommendation</button>
+                        </form>
+                        <button class="btn btn-primary btn-lg mb-4" id="loadingButton" type="button" disabled hidden>
+                            <span class="spinner-border" style="width: 1.5rem; height: 1.5rem;" role="status" aria-hidden="true"></span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loading...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                        <div id="recommendationResult" hidden>
+
+                        </div>
+                        <input type="button" class="btn btn-primary ml-2 float-left" onclick="window.location.href = 'signout'" value="Sign Out"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+﻿grade_code,quality_points,description
+A+,4,
+A,4,
+A-,3.75,
+B+,3.25,
+B,3,
+B-,2.75,
+C+,2.25,
+C,2,
+C-,1.75,
+D+,1.25,
+D,1,
+D-,0.75,
+F,0.25,
+G,0,Unfinished Course Work (Ongoing)
+H,0,Honors
+HS,0,High Satisfactory
+I,0,Incomplete
+LS,0,Low Satisfactory
+N,0,Audit
+NC,0,No Credit
+NG,0,"No Credit, Unfinished Course Work (Expired) "
+R,0,Resignation
+S,0,Satisfactory
+T,0,Transfer
+U,0,Unsatisfactory
+W,0,Withdrawal
+Z,0,Invalid grade

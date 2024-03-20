@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Course Recommender Signup">
+        <meta name="author" content="Ameya Santosh Gidh">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Recommender</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="vertical-center">
+            <div class="container h-100 py-3 px-4">
+                <div class="text-center" id="name">
+                    <h3>Course Recommender</h3>
+                </div>
+                <hr/>
+                <form action="create" method="POST" oninput="passwordConfirm.setCustomValidity(passwordConfirm.value != password.value ? 'Passwords don\'t match.' : '')">
+                    <div class="form-group row justify-content-center">
+                        <label for="userName" class="col-sm-2 col-form-label">Name: </label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="userName" name="name" placeholder="Enter name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <label for="userUserName" class="col-sm-2 col-form-label">Username: </label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="userUserName" name="username" placeholder="Enter username" required>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <label for="userAge" class="col-sm-2 col-form-label">Age: </label>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control" id="userAge" name="age" placeholder="Enter age" required>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <label for="userGender" class="col-sm-2 col-form-label">Gender: </label>
+                        <div class="col-sm-6">
+                            <select class="form-control" id="userGender" name="gender">
+                                <option value="F">Women</option>
+                                <option value="M">Men</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <label for="userLevel" class="col-sm-2 col-form-label">Level: </label>
+                        <div class="col-sm-6">
+                            <select class="form-control" id="userLevel" name="level">
+                                <% for (idx=0; idx < levels.length; idx++){ %>
+                                    <option value="<%= levels[idx].level_id %>"><%= levels[idx].level_name %></option>
+                                <% } %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <label for="userStartTerm" class="col-sm-2 col-form-label">Start term: </label>
+                        <div class="col-sm-6">
+                            <select class="form-control" id="userStartTerm" name="term">
+                                <% for (idx=0; idx < terms.length; idx++){ %>
+                                    <option value="<%= terms[idx].term_id %>"><%= terms[idx].semester + " " + terms[idx].year %></option>
+                                <% } %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <label for="userPlan" class="col-sm-2 col-form-label">Plan of study: </label>
+                        <div class="col-sm-6">
+                            <select class="form-control" id="userPlan" name="plan">
+                                <% for (idx=0; idx < plans.length; idx++){ %>
+                                    <option value="<%= plans[idx].plan_id %>"><%= plans[idx].plan_of_study %></option>
+                                <% } %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <label for="userDegree" class="col-sm-2 col-form-label">Degree: </label>
+                        <div class="col-sm-6">
+                            <select class="form-control" id="userDegree" name="degree">
+                                <% for (idx=0; idx < degrees.length; idx++){ %>
+                                    <option value="<%= degrees[idx].degree_id %>"><%= degrees[idx].degree_name %></option>
+                                <% } %>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <label for="userEmail" class="col-sm-2 col-form-label">Email: </label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="userEmail" name="email" placeholder="Enter email" required>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <label for="userPassword" class="col-sm-2 col-form-label">Password: </label>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control" id="userPassword" name="password" placeholder="Enter password" required>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <label for="userPassword" class="col-sm-2 col-form-label">Confirm Password: </label>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control" id="userPassword" name="passwordConfirm" placeholder="Enter password">
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <label for="userStatus" class="col-sm-2 col-form-label">Status: </label>
+                        <div class="col-sm-6">
+                            <select class="form-control" id="userStatus" name="status" disabled>
+                                <option value="1">Current</option>
+                                <option value="0">Past</option>
+                            </select>
+                            <input type="hidden" name="status" value="1"/>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary float-right">Register</button>
+                </form>
+                <input type="button" class="btn btn-primary float-left" onclick="window.location.href = '/'" value="Back"/>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
