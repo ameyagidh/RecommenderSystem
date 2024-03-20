@@ -2,6 +2,11 @@
 
 The Course Recommender System is a project aimed at providing personalized course recommendations to students based on their academic background and preferences. By leveraging user profile data and collaborative filtering techniques, the system generates tailored recommendations to assist students in making informed decisions about their course selections.
 
+## Screenshot
+
+<img width="1496" alt="Screenshot 2024-03-20 at 1 27 31 AM" src="https://github.com/ameyagidh/RecommenderSystem/assets/65457905/f381cb9e-c94f-4be5-9352-f2e51e6eb65a">
+
+
 ## Features
 
 - **User Profile Collection**: Collects comprehensive user profiles including demographic information (name, age, gender) and academic details (start term, study plan, level of study, degree, previously taken courses) through HTML forms.
